@@ -2,7 +2,7 @@
 
 The landing page for [lanrith.com](https://lanrith.com). Lanrith is an open-source router and edge OS for homelabs, currently in development.
 
-This is a static site: HTML, CSS, a small theme switcher, and local brand assets. It has no build step or runtime dependencies.
+This is a static site: HTML, CSS, small scripts for theme and illustrated interactions, and local brand assets. It has no build step or runtime dependencies.
 
 ## Preview
 
@@ -19,13 +19,18 @@ Open <http://localhost:8000>.
 - `index.html` contains the page content and metadata.
 - `styles.css` contains the layout and both themes.
 - `theme.js` controls the theme preference.
+- `motion.js` controls the illustrated interactions and optional motion.
 - `assets/` contains the original Lanrith artwork, fonts, and font licences.
+
+When changing a CSS or JavaScript file, update its `?v=` suffix in `index.html` to the first 12 characters of the file's SHA-256 hash. This refreshes cached assets for returning visitors.
 
 Preserve the original brand artwork and page composition. Dark mode uses neutral charcoal surfaces with restrained teal accents; light mode uses the original warm paper palette. Keep fonts and images local.
 
 Describe the project’s direction honestly while it is in development. Add installation, documentation, or release links only when their destinations are ready.
 
-Before publishing, check both themes on desktop and narrow mobile screens, keyboard navigation, the theme preference after reload, and the page with JavaScript disabled. Check that local links and assets also work under the `/website/` path used by GitHub Pages.
+The [content and motion notes](docs/design-notes.md) explain the positioning, editorial choices, references, and limits on product claims.
+
+Before publishing, check both themes on desktop and narrow mobile screens, keyboard navigation, the theme preference after reload, and the page with JavaScript disabled. Exercise each illustrated scene and the animation replay; check reduced motion on initial load and when changed at runtime. Check that local links and assets also work under the `/website/` path used by GitHub Pages.
 
 ## Hosting
 

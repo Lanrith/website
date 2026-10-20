@@ -1,4 +1,4 @@
-/* The site's only script. Run before CSS to avoid a wrong-theme first paint. */
+/* Run before CSS to avoid a wrong-theme first paint. Motion is enhanced separately. */
 (() => {
   'use strict';
 
