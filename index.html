@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Lanrith — Your homelab’s first hop.</title>
+  <meta name="description" content="We’re building a homelab router with the hard parts already figured out. Routing, DNS, discovery and IPv6, designed to work together. With configuration you own.">
+  <link rel="canonical" href="https://lanrith.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lanrith">
+  <meta property="og:url" content="https://lanrith.com/">
+  <meta property="og:title" content="Lanrith — Your homelab’s first hop.">
+  <meta property="og:description" content="We’re building a homelab router with the hard parts already figured out. Routing, DNS, discovery and IPv6, designed to work together. With configuration you own.">
+  <meta property="og:image" content="https://lanrith.com/assets/social/lanrith-social-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lanrith. Your homelab’s first hop. Open-source router &amp; edge OS.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://lanrith.com/assets/social/lanrith-social-1200x630.png">
+  <meta name="twitter:image:alt" content="Lanrith. Your homelab’s first hop. Open-source router &amp; edge OS.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="icon" sizes="any" href="assets/logo/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Blocking by design: apply the saved theme before the stylesheet and first paint. -->
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-od-id="skip-link">Skip to content</a>
+  <header class="header wrap" data-od-id="header">
+    <a class="brand" href="#main" aria-label="Lanrith home" data-od-id="header-logo">
+      <img class="logo logo-dark" src="assets/logo/lanrith-reverse.svg" alt="" width="300" height="88">
+      <img class="logo logo-light" src="assets/logo/lanrith-primary.svg" alt="" width="300" height="88">
+    </a>
+    <nav class="nav" aria-label="Main navigation" data-od-id="navigation">
+      <a href="#idea" data-od-id="nav-idea">The idea</a>
+      <a href="#homelab" data-od-id="nav-homelab">For your homelab</a>
+      <a href="#foundation" data-od-id="nav-foundation">The foundation</a>
+    </nav>
+    <button class="theme-switch" type="button" role="switch" aria-label="Dark theme" aria-checked="true" hidden data-od-id="theme-switch">
+      <span class="theme-light" aria-hidden="true">Light</span>
+      <span class="theme-dark" aria-hidden="true">Dark</span>
+    </button>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1">
+    <section class="hero" aria-labelledby="headline" data-od-id="hero">
+      <div>
+        <div class="hero-meta">
+          <p class="eyebrow">Open-source router &amp; edge OS</p>
+          <span class="development" data-od-id="development-label">In development</span>
+        </div>
+        <h1 id="headline" data-od-id="hero-heading">Your homelab’s first hop.</h1>
+        <p class="hero-lead">We’re building a homelab router with the hard parts already figured out.</p>
+        <p class="hero-support">Routing, DNS, discovery and IPv6, designed to work together. With configuration you own.</p>
+        <div class="actions">
+          <a class="button" href="#idea" data-od-id="meet-lanrith">Meet Lanrith <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <figure class="hero-art" data-od-id="hero-diagram">
+        <svg viewBox="0 0 470 410" data-od-id="network-diagram" role="img" aria-label="Home, devices, and lab networks connect to the internet through Lanrith."><g fill="none" stroke="var(--diagram-line)" stroke-width="3"><path d="M64 78h100q30 0 30 30v82q0 30 30 30h20M64 220h180M64 362h100q30 0 30-30v-82q0-30 30-30"/><path d="M356 220h74" stroke="var(--accent)" stroke-width="4"/></g><g fill="var(--bg)" stroke="var(--diagram-line)" stroke-width="3"><circle cx="64" cy="78" r="10"/><circle cx="64" cy="220" r="10"/><circle cx="64" cy="362" r="10"/><circle cx="430" cy="220" r="10" stroke="var(--accent)"/></g><rect x="242" y="160" width="114" height="120" rx="12" fill="var(--diagram-node)"/><g transform="translate(274 175) scale(.8)" fill="var(--diagram-mark)"><path d="M8.5 8H15.5V26.5H34V33.5H15.5V42A6.5 6.5 0 0 0 22 48.5H52V55.5H22A13.5 13.5 0 0 1 8.5 42Z"/><circle cx="48" cy="30" r="6.5"/></g><g fill="var(--fg)" font-family="Manrope" font-size="19" font-weight="600"><text x="28" y="46">Home</text><text x="28" y="188">Devices</text><text x="28" y="330">Lab</text><text x="365" y="188">Internet</text><text x="299" y="253" fill="var(--diagram-label)" text-anchor="middle">Lanrith</text></g></svg>
+        <figcaption>One dependable edge for your homelab.</figcaption>
+      </figure>
+    </section>
+
+    <div class="strip" data-od-id="benefit-strip">
+      <div data-od-id="benefit-basics">
+        <b>The basics, together</b>
+        <p>One considered setup for the connections your home relies on.</p>
+      </div>
+      <div data-od-id="benefit-networks">
+        <b>Your networks, your rules</b>
+        <p>Let services cross the boundaries you choose.</p>
+      </div>
+      <div data-od-id="benefit-long-run">
+        <b>Built for the long run</b>
+        <p>Understand your setup. Make deliberate changes. Keep a way back.</p>
+      </div>
+    </div>
+
+    <section class="section" id="idea" aria-labelledby="idea-heading" data-od-id="idea">
+      <div class="intro">
+        <span class="eyebrow">The idea</span>
+        <div>
+          <h2 id="idea-heading" data-od-id="idea-heading">A working network. More room for your homelab.</h2>
+          <p>A homelab brings together things that were never designed as one system. Your router should make those connections easier. Lanrith is being built to take care of the networking details that otherwise become another project.</p>
+        </div>
+      </div>
+      <div class="outcomes">
+        <article class="outcome" data-od-id="outcome-foundations">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="utility-icon" aria-hidden="true" focusable="false" ><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></g></svg>
+          <h3 data-od-id="foundations-heading">Get the foundations right.</h3>
+          <p>Routing, NAT, DNS and IPv4/IPv6 belong together. We’re bringing them into one coherent setup, so the everyday connections need less troubleshooting.</p>
+          <span class="detail">ROUTING / DNS / IPv4 + IPv6</span>
+        </article>
+        <article class="outcome" data-od-id="outcome-discovery">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="utility-icon" aria-hidden="true" focusable="false" ><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M10 7v6m-3-3h6"/></g></svg>
+          <h3 data-od-id="discovery-heading">Let devices find their services.</h3>
+          <p>A printer on one network. A phone on another. Useful discovery should work across chosen boundaries, without opening up everything else.</p>
+          <span class="detail">DISCOVERY / DELIBERATE BOUNDARIES</span>
+        </article>
+        <article class="outcome" data-od-id="outcome-configuration">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="utility-icon" aria-hidden="true" focusable="false" ><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="2" y="16" width="6" height="5" rx="1"/><rect x="16" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M5 16v-4h14v4"/></g></svg>
+          <h3 data-od-id="configuration-heading">Keep your network your own.</h3>
+          <p>Describe the networks and service access you want in configuration you can read, version and review. Keep the choices with you.</p>
+          <span class="detail">YOUR NETWORK / YOUR CONFIGURATION</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section setup" id="homelab" aria-labelledby="homelab-heading" data-od-id="homelab">
+      <div class="setup-copy">
+        <div class="eyebrow">For your homelab</div>
+        <h2 id="homelab-heading" data-od-id="homelab-heading">A dependable edge. Room to make it yours.</h2>
+        <p>The network supports everything you build behind it: home services, everyday devices and the next idea in your lab. Lanrith puts that shared foundation first.</p>
+      </div>
+      <ol class="steps">
+        <li data-od-id="homelab-home">
+          <div>
+            <h3 data-od-id="home-heading">A home, not just a test bench.</h3>
+            <p>Designed around the network you live with, including the devices other people in your home depend on.</p>
+          </div>
+        </li>
+        <li data-od-id="homelab-choices">
+          <div>
+            <h3 data-od-id="choices-heading">Clear choices, fewer quirks.</h3>
+            <p>Choose how your networks connect. Let the project handle how the underlying networking pieces fit together.</p>
+          </div>
+        </li>
+        <li data-od-id="homelab-open">
+          <div>
+            <h3 data-od-id="open-heading">An open project.</h3>
+            <p>Built in the open, with an architecture you can understand and a direction shaped by real homelabs.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="foundation" id="foundation" aria-labelledby="foundation-heading" data-od-id="foundation">
+      <div>
+        <div class="eyebrow">The foundation</div>
+        <h2 id="foundation-heading" data-od-id="foundation-heading">Confidence that carries on.</h2>
+        <p>A working network is the starting point. We’re designing Lanrith so you can understand what’s running, change it deliberately and recover when you need to.</p>
+      </div>
+      <div class="foundation-list">
+        <div class="foundation-item" data-od-id="foundation-system">
+          <h3 data-od-id="system-heading">A defined system</h3>
+          <p>An immutable OS keeps the installed system tied to a known release.</p>
+        </div>
+        <div class="foundation-item" data-od-id="foundation-changes">
+          <h3 data-od-id="changes-heading">Changes you can follow</h3>
+          <p>Versioned configuration makes your intent visible and reviewable.</p>
+        </div>
+        <div class="foundation-item" data-od-id="foundation-recovery">
+          <h3 data-od-id="recovery-heading">A way back</h3>
+          <p>Updates and recovery are part of the design from the start.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-heading" data-od-id="closing">
+      <div>
+        <h2 id="closing-heading" data-od-id="closing-heading">Your homelab has plenty left to explore.</h2>
+        <p>We’re working on its first hop. More details, supported setups and documentation will follow.</p>
+      </div>
+      <a class="button" href="https://github.com/Lanrith">Follow on GitHub <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer wrap" data-od-id="footer">
+    <div class="brand" data-od-id="footer-logo">
+      <img class="logo logo-dark" src="assets/logo/lanrith-reverse.svg" alt="Lanrith" width="300" height="88">
+      <img class="logo logo-light" src="assets/logo/lanrith-primary.svg" alt="Lanrith" width="300" height="88">
+    </div>
+    <div class="footer-copy">
+      <p>Lanrith · Open-source router &amp; edge OS · In development</p>
+      <p>© 2026 Lanrith</p>
+    </div>
+  </footer>
+</body>
+</html>
