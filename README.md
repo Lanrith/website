@@ -24,13 +24,15 @@ Open <http://localhost:8000>.
 
 When changing a CSS or JavaScript file, update its `?v=` suffix in `index.html` to the first 12 characters of the file's SHA-256 hash. This refreshes cached assets for returning visitors.
 
-Preserve the original brand artwork and page composition. Dark mode uses neutral charcoal surfaces with restrained teal accents; light mode uses the original warm paper palette. Keep fonts and images local.
+Preserve the original brand artwork, typography and network illustration language. Compose desktop, tablet and mobile around their reading and interaction needs. Dark mode uses neutral charcoal surfaces with restrained teal accents; light mode uses the original warm paper palette. Keep fonts and images local.
 
-Describe the project’s direction honestly while it is in development. Add installation, documentation, or release links only when their destinations are ready.
+Describe the project’s direction honestly while it is in development. GitHub links invite visitors to follow the project. Keep internal design reviews and planning documents out of the landing-page journey. Add installation or release links only when their destinations are ready.
 
 The [content and motion notes](docs/design-notes.md) explain the positioning, editorial choices, references, and limits on product claims.
 
-Before publishing, check both themes on desktop and narrow mobile screens, keyboard navigation, the theme preference after reload, and the page with JavaScript disabled. Exercise each illustrated scene and the animation replay; check reduced motion on initial load and when changed at runtime. Check that local links and assets also work under the `/website/` path used by GitHub Pages.
+Before publishing, check both themes on desktop, tablet and narrow mobile screens, keyboard navigation, the theme preference after reload, and the page with JavaScript disabled. Exercise each illustrated interaction; check reduced motion on initial load and when changed at runtime. Resize across layout breakpoints and check that controls remain close to their feedback. Check that local links and assets also work under the `/website/` path used by GitHub Pages.
+
+Review screenshots as well as browser assertions. The category and main benefits should be clear on a quick scan, with each section adding useful information. Essential content must be readable without waiting for motion or operating a demonstration.
 
 ## Hosting
 

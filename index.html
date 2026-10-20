@@ -27,8 +27,8 @@
   <link rel="preload" href="assets/fonts/ibm-plex-mono-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <!-- Blocking by design: apply the saved theme before the stylesheet and first paint. -->
   <script src="theme.js?v=f943a8786255"></script>
-  <link rel="stylesheet" href="styles.css?v=3ba89db5a133">
-  <script src="motion.js?v=00f82a717c89" defer></script>
+  <link rel="stylesheet" href="styles.css?v=c0f075fa2812">
+  <script src="motion.js?v=fe4766a2419b" defer></script>
 </head>
 <body>
   <a class="skip" href="#main" data-od-id="skip-link">Skip to content</a>
@@ -38,186 +38,138 @@
       <img class="logo logo-light" src="assets/logo/lanrith-primary.svg" alt="" width="300" height="88">
     </a>
     <nav class="nav" aria-label="Main navigation" data-od-id="navigation">
-      <a href="#idea" data-od-id="nav-idea">Why Lanrith</a>
+      <a href="#architecture" data-od-id="nav-architecture">How it works</a>
       <a href="#homelab" data-od-id="nav-homelab">For your homelab</a>
-      <a href="#foundation" data-od-id="nav-foundation">Under the hood</a>
+      <a href="#development" data-od-id="nav-development">Development</a>
     </nav>
     <button class="theme-switch" type="button" role="switch" aria-label="Dark theme" aria-checked="true" hidden data-od-id="theme-switch">
-      <span class="theme-light" aria-hidden="true">Light</span>
-      <span class="theme-dark" aria-hidden="true">Dark</span>
+      <span class="theme-light" aria-hidden="true">Light</span><span class="theme-dark" aria-hidden="true">Dark</span>
     </button>
   </header>
 
-  <main id="main" class="wrap" tabindex="-1">
-    <section class="hero" aria-labelledby="headline" data-od-id="hero">
-      <div>
-        <div class="hero-meta">
-          <p class="eyebrow">Open-source router &amp; edge OS</p>
-          <span class="development" data-od-id="development-label">In development</span>
-        </div>
-        <h1 id="headline" data-od-id="hero-heading">Your homelab’s first hop.</h1>
-        <p class="hero-lead">An immutable homelab router with the hard parts already figured out.</p>
-        <p class="hero-support">Read-only at its core. Signed by you. Designed to make routing, discovery and IPv6 work together.</p>
+  <main id="main" tabindex="-1">
+    <section class="hero wrap" aria-labelledby="headline" data-od-id="hero">
+      <div class="hero-copy">
+        <p class="development" data-od-id="development-label"><span aria-hidden="true"></span> Open source · In development</p>
+        <h1 id="headline" data-od-id="hero-heading">Your homelab’s<br>first hop.</h1>
+        <p class="hero-category">An immutable homelab router &amp; edge OS.</p>
+        <p class="hero-lead"><strong>Read-only at its core.</strong><br>Built and signed by you.</p>
         <div class="actions">
-          <a class="button" href="#idea" data-od-id="see-the-difference">See the difference <span aria-hidden="true">↓</span></a>
+          <a class="button" href="#architecture" data-od-id="explore-architecture">How it works <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://github.com/Lanrith" data-od-id="hero-follow">Follow on GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
       <figure class="hero-art" data-od-id="hero-diagram">
-        <svg viewBox="0 0 470 410" data-od-id="network-diagram" role="img" aria-label="Home, devices, and lab networks connect to the internet through Lanrith."><g fill="none" stroke="var(--diagram-line)" stroke-width="3"><path d="M64 78h100q30 0 30 30v82q0 30 30 30h20M64 220h180M64 362h100q30 0 30-30v-82q0-30 30-30"/><path d="M356 220h74" stroke="var(--accent)" stroke-width="4"/></g><g fill="var(--bg)" stroke="var(--diagram-line)" stroke-width="3"><circle cx="64" cy="78" r="10"/><circle cx="64" cy="220" r="10"/><circle cx="64" cy="362" r="10"/><circle cx="430" cy="220" r="10" stroke="var(--accent)"/></g><rect x="242" y="160" width="114" height="120" rx="12" fill="var(--diagram-node)"/><g transform="translate(274 175) scale(.8)" fill="var(--diagram-mark)"><path d="M8.5 8H15.5V26.5H34V33.5H15.5V42A6.5 6.5 0 0 0 22 48.5H52V55.5H22A13.5 13.5 0 0 1 8.5 42Z"/><circle cx="48" cy="30" r="6.5"/></g><g fill="var(--fg)" font-family="Manrope" font-size="19" font-weight="600"><text x="28" y="46">Home</text><text x="28" y="188">Devices</text><text x="28" y="330">Lab</text><text x="365" y="188">Internet</text><text x="299" y="253" fill="var(--diagram-label)" text-anchor="middle">Lanrith</text></g><g class="packets" aria-hidden="true" fill="var(--accent)" opacity="0"><circle r="4.5"/><circle r="4.5"/><circle r="4.5"/></g></svg>
-        <figcaption>A protected core. A connected homelab.</figcaption>
-        <button class="replay" type="button" hidden data-od-id="replay-flow"><span aria-hidden="true">↻</span> Replay flow</button>
+        <div class="network" role="img" aria-label="Home, devices and lab networks join at Lanrith, then connect to the Internet.">
+          <svg class="network-wide" viewBox="0 0 470 370" aria-hidden="true" focusable="false">
+            <g fill="none" stroke="var(--diagram-line)" stroke-width="2.5">
+              <path data-packet-path d="M48 55H153Q185 55 185 87V155Q185 185 215 185H242"/>
+              <path data-packet-path d="M48 185H242"/>
+              <path data-packet-path d="M48 315H153Q185 315 185 283V215Q185 185 215 185H242"/>
+              <path class="exit-line" d="M350 185H432"/>
+            </g>
+            <g fill="var(--bg)" stroke="var(--diagram-line)" stroke-width="2.5"><circle cx="48" cy="55" r="7"/><circle cx="48" cy="185" r="7"/><circle cx="48" cy="315" r="7"/><circle cx="432" cy="185" r="7"/></g>
+            <g class="network-packets" fill="var(--accent)"><circle r="4"/><circle r="4"/><circle r="4"/></g>
+          </svg>
+          <svg class="network-compact" viewBox="0 0 320 184" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <g fill="none" stroke="var(--diagram-line)" stroke-width="2">
+              <path data-packet-path d="M44 26V40Q44 54 58 54H146Q160 54 160 68V74"/>
+              <path data-packet-path d="M160 26V74"/>
+              <path data-packet-path d="M276 26V40Q276 54 262 54H174Q160 54 160 68V74"/>
+              <path class="exit-line" d="M160 132V163"/>
+            </g>
+            <g fill="var(--bg)" stroke="var(--diagram-line)" stroke-width="2"><circle cx="44" cy="26" r="4"/><circle cx="160" cy="26" r="4"/><circle cx="276" cy="26" r="4"/><circle cx="160" cy="163" r="4"/></g>
+            <g class="network-packets" fill="var(--accent)"><circle r="3.5"/><circle r="3.5"/><circle r="3.5"/></g>
+          </svg>
+          <span class="network-terminal terminal-home" aria-hidden="true"></span><span class="network-terminal terminal-devices" aria-hidden="true"></span><span class="network-terminal terminal-lab" aria-hidden="true"></span><span class="network-terminal terminal-internet" aria-hidden="true"></span>
+          <span class="network-label home" aria-hidden="true">Home</span>
+          <span class="network-label devices" aria-hidden="true">Devices</span>
+          <span class="network-label lab" aria-hidden="true">Lab</span>
+          <div class="network-router" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false"><path d="M8.5 8H15.5V26.5H34V33.5H15.5V42A6.5 6.5 0 0 0 22 48.5H52V55.5H22A13.5 13.5 0 0 1 8.5 42Z"/><circle cx="48" cy="30" r="6.5"/></svg><span>Lanrith</span>
+          </div>
+          <span class="network-label internet" aria-hidden="true">Internet</span>
+        </div>
+        <figcaption><span>One edge for home &amp; lab.</span><button class="replay" type="button" hidden data-od-id="replay-flow"><span aria-hidden="true">↻</span> Replay</button></figcaption>
       </figure>
     </section>
 
-    <div class="strip" data-od-id="benefit-strip">
-      <div data-od-id="benefit-basics">
-        <b>Read-only system</b>
-        <p>Filesystem integrity checked with dm-verity.</p>
+    <section class="architecture wrap" id="architecture" aria-labelledby="architecture-heading" data-od-id="architecture">
+      <div class="section-heading">
+        <p class="eyebrow">01 / The architecture</p>
+        <h2 id="architecture-heading" data-od-id="architecture-heading">A read-only core.<br>Change on your terms.</h2>
       </div>
-      <div data-od-id="benefit-networks">
-        <b>Configuration in Git</b>
-        <p>Review your network. Build and sign your image.</p>
-      </div>
-      <div data-od-id="benefit-long-run">
-        <b>Updates with a way back</b>
-        <p>Check the new boot. Keep the accepted release.</p>
-      </div>
-    </div>
-
-    <section class="section" id="idea" aria-labelledby="idea-heading" data-od-id="idea">
-      <div class="intro">
-        <span class="eyebrow">Immutable by design</span>
-        <div>
-          <h2 id="idea-heading" data-od-id="idea-heading">A read-only core. A deliberate way to change it.</h2>
-          <p>Lanrith treats the OS and its configuration as one versioned system. You choose what runs. Signed images, filesystem verification and a controlled update path help keep it that way.</p>
-        </div>
-      </div>
-      <div class="outcomes">
-        <article class="outcome" data-od-id="outcome-foundations">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="utility-icon" data-reveal aria-hidden="true" focusable="false" ><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M7 8V4m10 4V4M7 14h.01M11 14h.01M15 14h2"/></g></svg>
-          <h3 data-od-id="foundations-heading">Read-only at the root.</h3>
-          <p>System files live in a read-only image. dm-verity checks the filesystem as it is read, helping detect tampering. Persistent service data has its own separate storage.</p>
-          <span class="detail">READ-ONLY ROOT / INTEGRITY CHECKS</span>
-        </article>
-        <article class="outcome" data-od-id="outcome-discovery">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="utility-icon" data-reveal aria-hidden="true" focusable="false" ><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7m-7 4h7"/></g></svg>
-          <h3 data-od-id="discovery-heading">Your config. Your keys.</h3>
-          <p>Keep network intent in your own Git repository. Review the changes, build the image and sign it with keys you control. The running configuration belongs to that release.</p>
-          <span class="detail">CONFIGURATION IN GIT / OWNER-SIGNED</span>
-        </article>
-        <article class="outcome" data-od-id="outcome-configuration">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="utility-icon" data-reveal aria-hidden="true" focusable="false" ><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6M12 8v5l3 2"/></g></svg>
-          <h3 data-od-id="configuration-heading">A new image. A way back.</h3>
-          <p>Updates go to an inactive system slot. A new boot must pass health checks before it becomes the default. The accepted release stays available for fallback.</p>
-          <span class="detail">A/B UPDATES / BOOT HEALTH</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="section setup" id="homelab" aria-labelledby="homelab-heading" data-od-id="homelab">
-      <div class="setup-copy">
-        <div class="eyebrow">For your homelab</div>
-        <h2 id="homelab-heading" data-od-id="homelab-heading">Keep your weekends for the homelab.</h2>
-        <p>There’s a new service to try, and a houseful of devices that still need to work. We’re building the everyday networking around both.</p>
-      </div>
-      <ol class="steps">
-        <li data-od-id="homelab-home">
-          <div>
-            <h3 data-od-id="home-heading">The everyday networking, joined up.</h3>
-            <p>Routing, firewall rules, DNS, DHCP and IPv6 are designed as one setup. The integration work belongs in the project, so each homelab doesn’t have to repeat it.</p>
+      <div class="architecture-layout">
+        <article class="architecture-step" data-od-id="architecture-readonly">
+          <div class="claim">
+            <span class="step-index" aria-hidden="true">01</span>
+            <div><h3 data-od-id="readonly-heading">A verified, read-only system.</h3><p>dm-verity checks filesystem contents as they’re read, helping detect tampering. Leases, logs and data stay writable in separate storage.</p></div>
           </div>
-        </li>
-        <li data-od-id="homelab-choices">
-          <div>
-            <h3 data-od-id="choices-heading">Separate networks. Shared services.</h3>
-            <p>Keep home, guest and IoT networks separate. Share discovery and service access across the boundaries you choose, with mDNS/DNS-SD considered alongside firewall policy.</p>
+          <div class="core-proof" data-od-id="core-diagram">
+            <div class="system-image"><span class="mono">System image</span><strong>Read-only</strong><span class="image-parts">OS <span aria-hidden="true">+</span> configuration</span><span class="verification-label">dm-verity checks on read</span></div>
+            <div class="service-state"><span><b>Service state</b><span>Leases · logs · data</span></span><strong>Writable</strong></div>
           </div>
-        </li>
-        <li data-od-id="homelab-open">
-          <div>
-            <h3 data-od-id="open-heading">IPv4 and IPv6, connected.</h3>
-            <p>We’re bringing NAT64/NAT46 translation and discovery together for mixed IPv4/IPv6 setups. Supported service paths and device compatibility will be documented as they’re qualified.</p>
+        </article>
+        <article class="architecture-step" data-od-id="architecture-ownership">
+          <div class="claim">
+            <span class="step-index" aria-hidden="true">02</span>
+            <div><h3 data-od-id="ownership-heading">Your configuration. Your keys.</h3><p>Network intent lives in your Git repository. You build and sign the OS and configuration as one versioned image, using keys you control.</p></div>
           </div>
-        </li>
-      </ol>
-    </section>
-
-    <section class="console-passage" aria-labelledby="console-heading" data-od-id="console-passage">
-      <h2 id="console-heading" data-od-id="console-heading">A console for answers.<br>Git for changes.</h2>
-      <p>The local console is being built to explain devices, connections and policy decisions. It observes the router; changes to network intent start with your configuration.</p>
-    </section>
-
-    <section class="foundation" id="foundation" aria-labelledby="foundation-heading" data-od-id="foundation">
-      <div class="foundation-intro">
-        <div class="eyebrow">Under the hood</div>
-        <h2 id="foundation-heading" data-od-id="foundation-heading">Change the system. Keep your footing.</h2>
-        <p>Explore how a read-only system, staged updates and boot fallback fit together.</p>
-        <div class="scene-controls" role="group" aria-label="Choose a system flow" hidden data-od-id="flow-controls">
-          <button type="button" aria-pressed="true" aria-controls="scene-readonly" data-scene="readonly" data-od-id="flow-readonly"><span class="scene-number" aria-hidden="true">01</span> Read-only system <span class="scene-arrow" aria-hidden="true">→</span></button>
-          <button type="button" aria-pressed="false" aria-controls="scene-update" data-scene="update" data-od-id="flow-update"><span class="scene-number" aria-hidden="true">02</span> Update <span class="scene-arrow" aria-hidden="true">→</span></button>
-          <button type="button" aria-pressed="false" aria-controls="scene-recovery" data-scene="recovery" data-od-id="flow-recovery"><span class="scene-number" aria-hidden="true">03</span> Recovery <span class="scene-arrow" aria-hidden="true">→</span></button>
-        </div>
+          <div class="owner-proof" data-od-id="owner-diagram">
+            <ol class="build-path" aria-label="Image preparation sequence">
+              <li><span class="mono">Your repository</span><strong>Git configuration</strong></li>
+              <li><span class="mono">Your keys</span><strong>Build + sign</strong></li>
+              <li><span class="mono">Versioned image</span><strong>Signed image</strong></li>
+            </ol>
+          </div>
+        </article>
+        <article class="architecture-step update-step" data-od-id="architecture-updates">
+          <div class="claim">
+            <span class="step-index" aria-hidden="true">03</span>
+            <div><h3 data-od-id="updates-heading">Stage the new.<br>Keep the accepted.</h3><p>A signed candidate goes into the inactive slot. The accepted default is retained until the candidate passes fresh boot checks; boot fallback can return to it.</p><p class="rollback-note">Deliberate rollback uses reviewed inputs and a new signed deployment.</p></div>
+          </div>
+          <div class="update-proof" data-mode="stage" data-od-id="update-illustration">
+            <div class="update-topline"><span class="mono">Update illustration</span><span class="mono slot-key">A / B slots</span></div>
+            <div class="update-controls" role="group" aria-label="Choose an illustrated update state" hidden data-od-id="update-controls">
+              <button type="button" aria-pressed="true" aria-controls="update-result" data-state="stage" data-od-id="show-staging">Staging</button>
+              <button type="button" aria-pressed="false" aria-controls="update-result" data-state="fallback" data-od-id="show-fallback">Boot fallback</button>
+            </div>
+            <p class="route-source mono">Signed image</p>
+            <div class="slot-diagram">
+              <div class="slot accepted" data-od-id="accepted-slot"><span class="slot-letter" aria-hidden="true">A</span><div><span class="mono">Accepted image</span><strong>Retained</strong><span class="slot-detail">Current default</span></div></div>
+              <div class="slot candidate" data-od-id="candidate-slot"><span class="slot-letter" aria-hidden="true">B</span><div><span class="mono">Signed candidate</span><strong class="candidate-state">Staged</strong><span class="slot-detail candidate-detail">Inactive slot</span></div></div>
+              <svg class="slot-route" viewBox="0 0 480 42" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="stage-route" d="M460 0V12Q460 24 448 24H372Q360 24 360 36V42"/><path class="fallback-route" d="M360 0V12Q360 24 348 24H132Q120 24 120 36V42"/><circle class="slot-packet" r="4"/></svg>
+            </div>
+            <p class="update-result" id="update-result" role="status" aria-live="polite" aria-atomic="true"><strong>Candidate staged. Accepted image retained.</strong> Fresh boot checks come before acceptance.</p>
+            <p class="no-js-fallback">If the candidate fails its boot checks, boot fallback can return to the accepted image.</p>
+          </div>
+        </article>
       </div>
-      <div class="system-flow" data-od-id="system-flow">
-        <div class="flow-label">Illustrated system flow</div>
-        <div class="flow-scenes">
-          <article class="flow-scene" id="scene-readonly" aria-labelledby="readonly-heading" data-od-id="scene-readonly">
-            <div class="flow-diagram" role="img" aria-label="Lanrith has a read-only OS and configuration image, checked with dm-verity, and separate writable storage for service state.">
-              <div class="flow-origin">Lanrith</div>
-              <svg class="flow-route" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"><path d="M200 0v10q0 20-20 20H120q-20 0-20 20v10M200 10q0 20 20 20h60q20 0 20 20v10"/><circle cx="200" cy="4" r="4"/></svg>
-              <div class="flow-nodes">
-                <div class="flow-node protected"><span class="node-label">System image</span><strong>Read-only</strong><span>OS + configuration</span><span class="node-detail">dm-verity checks</span></div>
-                <div class="flow-node state"><span class="node-label">Service state</span><strong>Writable</strong><span>Leases, logs &amp; data</span><span class="node-detail">Separate storage</span></div>
-              </div>
-            </div>
-            <div class="scene-copy"><h3 id="readonly-heading" data-od-id="readonly-heading">The system stays read-only.</h3><p>The OS and its configuration are verified together. Leases, logs and other service state live separately.</p></div>
-          </article>
-          <article class="flow-scene" id="scene-update" aria-labelledby="update-heading" data-od-id="scene-update">
-            <div class="flow-diagram" role="img" aria-label="The owner-signed candidate goes into inactive slot B. Accepted slot A is retained while the new boot is checked.">
-              <div class="flow-origin">Owner-signed candidate</div>
-              <svg class="flow-route" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"><path class="route-quiet" d="M100 30v30"/><path class="active-route" d="M200 0v10q0 20 20 20h60q20 0 20 20v10"/><circle cx="200" cy="4" r="4"/><circle class="route-packet" r="4" opacity="0"/></svg>
-              <div class="flow-nodes">
-                <div class="flow-node"><span class="node-label">Slot A · retained</span><strong>Accepted image</strong><span>Stays available</span><span class="node-detail">Current default</span></div>
-                <div class="flow-node protected"><span class="node-label">Slot B · inactive</span><strong>New candidate</strong><span>Staged alongside A</span><span class="node-detail">Boot checks next</span></div>
-              </div>
-            </div>
-            <div class="scene-copy"><h3 id="update-heading" data-od-id="update-heading">Prepare the next image alongside the current one.</h3><p>The signed candidate is staged in an inactive slot. The accepted image remains available while the new boot is checked.</p></div>
-          </article>
-          <article class="flow-scene" id="scene-recovery" aria-labelledby="recovery-heading" data-od-id="scene-recovery">
-            <div class="flow-diagram" role="img" aria-label="Boot fallback returns to accepted slot A when candidate B fails. A deliberate rollback instead uses reviewed inputs and a new signed deployment.">
-              <div class="flow-origin">Boot fallback</div>
-              <svg class="flow-route" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"><path class="active-route" d="M200 0v10q0 20-20 20H120q-20 0-20 20v10"/><path class="route-quiet" d="M300 30v30"/><circle cx="200" cy="4" r="4"/><circle class="route-packet" r="4" opacity="0"/></svg>
-              <div class="flow-nodes">
-                <div class="flow-node protected"><span class="node-label">Slot A · retained</span><strong>Accepted image</strong><span>Return on fallback</span><span class="node-detail">Previous release</span></div>
-                <div class="flow-node"><span class="node-label">Slot B · candidate</span><strong>Boot check failed</strong><span>Not made default</span><span class="node-detail">Candidate set aside</span></div>
-              </div>
-            </div>
-            <div class="scene-copy"><h3 id="recovery-heading" data-od-id="recovery-heading">A failed candidate has a path back.</h3><p>Boot fallback returns to the previously accepted image. A deliberate rollback uses reviewed inputs and a new signed deployment.</p></div>
-          </article>
-        </div>
-        <p class="flow-source"><a href="https://github.com/Lanrith/lanrith/blob/main/docs/operations.md">Update design on GitHub <span aria-hidden="true">↗</span></a></p>
-        <span class="flow-status visually-hidden" role="status"></span>
+      <p class="foundation-note">Built on Debian, systemd &amp; mkosi.</p>
+    </section>
+
+    <section class="homelab wrap" id="homelab" aria-labelledby="homelab-heading" data-od-id="homelab">
+      <div class="section-heading">
+        <p class="eyebrow">02 / Everyday networking</p>
+        <h2 id="homelab-heading" data-od-id="homelab-heading">For the house.<br>And the lab.</h2>
+        <p class="section-intro">A new service to try.<br>A houseful of devices to keep connected.</p>
+      </div>
+      <div class="everyday-grid">
+        <article class="everyday integrated" data-od-id="networking-integrated"><span class="mono topic-label">The essentials</span><h3 data-od-id="integrated-heading">One networking stack.</h3><p>Routing, firewall, DNS, DHCP, IPv4 and IPv6, designed to work together. The integration work belongs in the project.</p><p class="protocol-line" aria-hidden="true">Routing <span>·</span> Firewall <span>·</span> DNS <span>·</span> DHCP</p></article>
+        <article class="everyday" data-od-id="networking-discovery"><span class="mono topic-label">Across selected boundaries</span><h3 data-od-id="discovery-heading">Separate networks.<br>Shared services.</h3><p>Selected cross-segment mDNS/DNS-SD discovery is being developed alongside firewall policy. You choose the boundaries.</p></article>
+        <article class="everyday" data-od-id="networking-ip"><span class="mono topic-label">Mixed IPv4 / IPv6</span><h3 data-od-id="ip-heading">A path between protocols.</h3><p>NAT64/NAT46 service paths are being developed and qualified. Supported devices and service combinations will be documented.</p></article>
+        <article class="everyday console" data-od-id="networking-console"><span class="mono topic-label">Local console · In development</span><h3 data-od-id="console-heading">See what’s happening.<br>Change it in Git.</h3><p>The local console is being built to explain devices, connections and policy decisions. It observes the router; configuration changes start in Git.</p></article>
       </div>
     </section>
 
-    <section class="closing" aria-labelledby="closing-heading" data-od-id="closing">
-      <div>
-        <h2 id="closing-heading" data-od-id="closing-heading">Your next project is waiting.</h2>
-        <p>We’re working on its first hop. Lanrith is in development; supported setups, release details and documentation will follow.</p>
-      </div>
-      <a class="button" href="https://github.com/Lanrith" data-od-id="follow-github">Follow on GitHub <span aria-hidden="true">↗</span></a>
+    <section class="closing wrap" id="development" aria-labelledby="closing-heading" data-od-id="closing">
+      <div><p class="eyebrow">03 / In development</p><h2 id="closing-heading" data-od-id="closing-heading">Follow the first hop.</h2></div>
+      <div class="closing-detail"><p>Lanrith is taking shape. Supported setups, release details and documentation will follow.</p><a class="button" href="https://github.com/Lanrith" data-od-id="follow-github">Follow on GitHub <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
-
   <footer class="footer wrap" data-od-id="footer">
-    <div class="brand" data-od-id="footer-logo">
-      <img class="logo logo-dark" src="assets/logo/lanrith-reverse.svg" alt="Lanrith" width="300" height="88">
-      <img class="logo logo-light" src="assets/logo/lanrith-primary.svg" alt="Lanrith" width="300" height="88">
-    </div>
-    <div class="footer-copy">
-      <p>Lanrith · Open-source immutable router &amp; edge OS · In development</p>
-      <p>© 2026 Lanrith</p>
-    </div>
+    <div class="brand" data-od-id="footer-logo"><img class="logo logo-dark" src="assets/logo/lanrith-reverse.svg" alt="Lanrith" width="300" height="88"><img class="logo logo-light" src="assets/logo/lanrith-primary.svg" alt="Lanrith" width="300" height="88"></div>
+    <p>Open-source router &amp; edge OS <span>© 2026 Lanrith</span></p>
   </footer>
 </body>
 </html>
