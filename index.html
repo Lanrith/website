@@ -4,22 +4,77 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark light">
-  <title>Lanrith — Your homelab’s first hop.</title>
-  <meta name="description" content="An open-source immutable homelab router and edge OS. Read-only at its core, signed by you, with staged updates and boot fallback. In development.">
+  <title>Lanrith — Immutable homelab router &amp; edge OS</title>
+  <meta name="description" content="Lanrith is an open-source homelab router and edge OS with a read-only system, Git-managed configuration, owner-signed images and boot fallback.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://lanrith.com/">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <link rel="alternate" type="text/markdown" href="index.md" title="Lanrith in Markdown">
+  <link rel="describedby" type="text/plain" href="llms.txt">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Lanrith">
   <meta property="og:url" content="https://lanrith.com/">
-  <meta property="og:title" content="Lanrith — Your homelab’s first hop.">
-  <meta property="og:description" content="An open-source immutable homelab router and edge OS. Read-only at its core, signed by you, with staged updates and boot fallback. In development.">
+  <meta property="og:title" content="Lanrith — Immutable homelab router &amp; edge OS">
+  <meta property="og:description" content="Lanrith is an open-source homelab router and edge OS with a read-only system, Git-managed configuration, owner-signed images and boot fallback.">
   <meta property="og:image" content="https://lanrith.com/assets/social/lanrith-social-1200x630.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Lanrith. Your homelab’s first hop. Open-source router &amp; edge OS.">
-  <meta name="twitter:description" content="An open-source immutable homelab router and edge OS. Read-only at its core, signed by you, with staged updates and boot fallback. In development.">
+  <meta name="twitter:title" content="Lanrith — Immutable homelab router &amp; edge OS">
+  <meta name="twitter:description" content="Lanrith is an open-source homelab router and edge OS with a read-only system, Git-managed configuration, owner-signed images and boot fallback.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://lanrith.com/assets/social/lanrith-social-1200x630.png">
   <meta name="twitter:image:alt" content="Lanrith. Your homelab’s first hop. Open-source router &amp; edge OS.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://lanrith.com/#organization",
+        "name": "Lanrith",
+        "url": "https://lanrith.com/",
+        "logo": "https://lanrith.com/assets/logo/apple-touch-icon.png",
+        "sameAs": ["https://github.com/Lanrith"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://lanrith.com/#website",
+        "name": "Lanrith",
+        "url": "https://lanrith.com/",
+        "inLanguage": "en",
+        "publisher": {"@id": "https://lanrith.com/#organization"}
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://lanrith.com/#webpage",
+        "url": "https://lanrith.com/",
+        "name": "Lanrith — Immutable homelab router & edge OS",
+        "description": "Lanrith is an open-source homelab router and edge OS with a read-only system, Git-managed configuration, owner-signed images and boot fallback.",
+        "inLanguage": "en",
+        "isPartOf": {"@id": "https://lanrith.com/#website"},
+        "mainEntity": {"@id": "https://lanrith.com/#software"},
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://lanrith.com/assets/social/lanrith-social-1200x630.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://lanrith.com/#software",
+        "name": "Lanrith",
+        "url": "https://lanrith.com/",
+        "description": "An open-source immutable router and edge operating system for homelabs. Built on Debian, systemd and mkosi, with a read-only system image, owner-controlled signing and staged updates.",
+        "codeRepository": "https://github.com/Lanrith/lanrith",
+        "creativeWorkStatus": "In development",
+        "author": {"@id": "https://lanrith.com/#organization"}
+      }
+    ]
+  }
+  </script>
   <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
   <link rel="icon" sizes="any" href="assets/logo/favicon.ico">
   <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
@@ -40,7 +95,7 @@
     <nav class="nav" aria-label="Main navigation" data-od-id="navigation">
       <a href="#architecture" data-od-id="nav-architecture">How it works</a>
       <a href="#homelab" data-od-id="nav-homelab">For your homelab</a>
-      <a href="#development" data-od-id="nav-development">Development</a>
+      <a href="#development" data-od-id="nav-development">The project</a>
     </nav>
     <button class="theme-switch" type="button" role="switch" aria-label="Dark theme" aria-checked="true" hidden data-od-id="theme-switch">
       <span class="theme-light" aria-hidden="true">Light</span><span class="theme-dark" aria-hidden="true">Dark</span>
@@ -52,7 +107,7 @@
       <div class="hero-copy">
         <p class="development" data-od-id="development-label"><span aria-hidden="true"></span> Open source · In development</p>
         <h1 id="headline" data-od-id="hero-heading">Your homelab’s<br>first hop.</h1>
-        <p class="hero-category">An immutable homelab router &amp; edge OS.</p>
+        <p class="hero-category">An immutable router &amp; edge OS for your homelab.</p>
         <p class="hero-lead"><strong>Read-only at its core.</strong><br>Built and signed by you.</p>
         <div class="actions">
           <a class="button" href="#architecture" data-od-id="explore-architecture">How it works <span aria-hidden="true">↓</span></a>
@@ -103,7 +158,7 @@
         <article class="architecture-step" data-od-id="architecture-readonly">
           <div class="claim">
             <span class="step-index" aria-hidden="true">01</span>
-            <div><h3 data-od-id="readonly-heading">A verified, read-only system.</h3><p>dm-verity checks filesystem contents as they’re read, helping detect tampering. Leases, logs and data stay writable in separate storage.</p></div>
+            <div><h3 data-od-id="readonly-heading">A verified, read-only system.</h3><p>dm-verity checks filesystem contents as they’re read, helping detect tampering. Leases, logs and service data use separate writable storage.</p></div>
           </div>
           <div class="core-proof" data-od-id="core-diagram">
             <div class="system-image"><span class="mono">System image</span><strong>Read-only</strong><span class="image-parts">OS <span aria-hidden="true">+</span> configuration</span><span class="verification-label">dm-verity checks on read</span></div>
@@ -113,7 +168,7 @@
         <article class="architecture-step" data-od-id="architecture-ownership">
           <div class="claim">
             <span class="step-index" aria-hidden="true">02</span>
-            <div><h3 data-od-id="ownership-heading">Your configuration. Your keys.</h3><p>Network intent lives in your Git repository. You build and sign the OS and configuration as one versioned image, using keys you control.</p></div>
+            <div><h3 data-od-id="ownership-heading">Your configuration. Your keys.</h3><p>Your network configuration lives in Git. You build and sign the OS and configuration as one image, using keys you control.</p></div>
           </div>
           <div class="owner-proof" data-od-id="owner-diagram">
             <ol class="build-path" aria-label="Image preparation sequence">
@@ -126,7 +181,7 @@
         <article class="architecture-step update-step" data-od-id="architecture-updates">
           <div class="claim">
             <span class="step-index" aria-hidden="true">03</span>
-            <div><h3 data-od-id="updates-heading">Stage the new.<br>Keep the accepted.</h3><p>A signed candidate goes into the inactive slot. The accepted default is retained until the candidate passes fresh boot checks; boot fallback can return to it.</p><p class="rollback-note">Deliberate rollback uses reviewed inputs and a new signed deployment.</p></div>
+            <div><h3 data-od-id="updates-heading">Updates with a boot fallback.</h3><p>Each signed update is staged in the inactive slot. The accepted image stays the default until the update passes its boot checks.</p><p class="rollback-note">To roll back deliberately, rebuild reviewed inputs and sign a new deployment.</p></div>
           </div>
           <div class="update-proof" data-mode="stage" data-od-id="update-illustration">
             <div class="update-topline"><span class="mono">Update illustration</span><span class="mono slot-key">A / B slots</span></div>
@@ -155,16 +210,16 @@
         <p class="section-intro">A new service to try.<br>A houseful of devices to keep connected.</p>
       </div>
       <div class="everyday-grid">
-        <article class="everyday integrated" data-od-id="networking-integrated"><span class="mono topic-label">The essentials</span><h3 data-od-id="integrated-heading">One networking stack.</h3><p>Routing, firewall, DNS, DHCP, IPv4 and IPv6, designed to work together. The integration work belongs in the project.</p><p class="protocol-line" aria-hidden="true">Routing <span>·</span> Firewall <span>·</span> DNS <span>·</span> DHCP</p></article>
-        <article class="everyday" data-od-id="networking-discovery"><span class="mono topic-label">Across selected boundaries</span><h3 data-od-id="discovery-heading">Separate networks.<br>Shared services.</h3><p>Selected cross-segment mDNS/DNS-SD discovery is being developed alongside firewall policy. You choose the boundaries.</p></article>
-        <article class="everyday" data-od-id="networking-ip"><span class="mono topic-label">Mixed IPv4 / IPv6</span><h3 data-od-id="ip-heading">A path between protocols.</h3><p>NAT64/NAT46 service paths are being developed and qualified. Supported devices and service combinations will be documented.</p></article>
-        <article class="everyday console" data-od-id="networking-console"><span class="mono topic-label">Local console · In development</span><h3 data-od-id="console-heading">See what’s happening.<br>Change it in Git.</h3><p>The local console is being built to explain devices, connections and policy decisions. It observes the router; configuration changes start in Git.</p></article>
+        <article class="everyday integrated" data-od-id="networking-integrated"><span class="mono topic-label">The essentials</span><h3 data-od-id="integrated-heading">One networking stack.</h3><p>Routing, firewall, DNS, DHCP, IPv4 and IPv6 work together out of the box, with their defaults configured as one system.</p><p class="protocol-line" aria-hidden="true">Routing <span>·</span> Firewall <span>·</span> DNS <span>·</span> DHCP</p></article>
+        <article class="everyday" data-od-id="networking-discovery"><span class="mono topic-label">Across selected networks</span><h3 data-od-id="discovery-heading">Separate networks.<br>Shared services.</h3><p>Share mDNS/DNS-SD service discovery across the networks you choose, alongside firewall rules that control access.</p></article>
+        <article class="everyday" data-od-id="networking-ip"><span class="mono topic-label">Mixed IPv4 / IPv6</span><h3 data-od-id="ip-heading">Connect IPv4 and IPv6 services.</h3><p>NAT64/NAT46 connects supported IPv4 and IPv6 services across your network.</p></article>
+        <article class="everyday console" data-od-id="networking-console"><span class="mono topic-label">Local console</span><h3 data-od-id="console-heading">See what’s happening.<br>Change it in Git.</h3><p>The local console explains devices, connections and policy decisions. Router configuration stays in Git.</p></article>
       </div>
     </section>
 
     <section class="closing wrap" id="development" aria-labelledby="closing-heading" data-od-id="closing">
-      <div><p class="eyebrow">03 / In development</p><h2 id="closing-heading" data-od-id="closing-heading">Follow the first hop.</h2></div>
-      <div class="closing-detail"><p>Lanrith is taking shape. Supported setups, release details and documentation will follow.</p><a class="button" href="https://github.com/Lanrith" data-od-id="follow-github">Follow on GitHub <span aria-hidden="true">↗</span></a></div>
+      <div><p class="eyebrow">03 / The project</p><h2 id="closing-heading" data-od-id="closing-heading">Follow the first hop.</h2></div>
+      <div class="closing-detail"><p>Explore the code and follow project updates on GitHub.</p><a class="button" href="https://github.com/Lanrith" data-od-id="follow-github">Follow on GitHub <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
   <footer class="footer wrap" data-od-id="footer">

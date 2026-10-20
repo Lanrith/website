@@ -1,0 +1,5 @@
+# Public site content is available to search engines and AI crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: https://lanrith.com/sitemap.xml

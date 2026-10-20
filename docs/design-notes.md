@@ -17,6 +17,7 @@ Keep the promise proportional to the evidence in the [project](https://github.co
 - Distinguish boot fallback from a deliberate signed rollback.
 - Keep the console observational for router configuration; changes start in Git.
 - Keep development status visible. Compatibility and production readiness require qualified releases.
+- Describe existing features in the present tense. The project-status notice covers overall maturity; feature paragraphs explain what the router does.
 - Avoid unsupported certifications, performance numbers, universal compatibility and release dates.
 
 Visitor-facing GitHub links invite people to follow development. The landing page does not send visitors to internal design reviews, planning files or operations documents.
@@ -64,7 +65,7 @@ Review actual desktop, tablet and phone screenshots in both themes, alongside br
 
 Exercise normal motion as well as reduced motion, initial playback and replay, pointer/touch and keyboard use, breakpoint changes, enlarged text, JavaScript-disabled content, theme persistence and blocked storage. Verify project-relative assets under the GitHub Pages `/website/` path and ensure visitor GitHub links point to the organisation.
 
-The 20 October layout revision was rendered at 1440, 1280, 768, 390 and 320px. Both themes were checked on desktop and phones. At 390px, the final page is 3,741px tall, with the architecture section starting at y746 and the first follow action at y397. The previous values were 6,051, y4,307 and y5,744 respectively.
+The 20 October layout revision, before the subsequent copy review, was rendered at 1440, 1280, 768, 390 and 320px. Both themes were checked on desktop and phones. At 390px, that revision is 3,741px tall, with the architecture section starting at y746 and the first follow action at y397. The previous values were 6,051, y4,307 and y5,744 respectively.
 
 Actual packet movement, replay, staging and fallback were checked on desktop and mobile. Additional checks covered reduced motion, preserved state across resizing, 200% text at 320/390px, no-JavaScript content, local assets and valid links. Screenshot inspection caught a writable-state label wrapping awkwardly at enlarged text; the label now moves onto its own line when needed. No horizontal page overflow, failed assets or browser errors were recorded.
 

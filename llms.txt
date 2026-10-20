@@ -1,0 +1,13 @@
+# Lanrith
+
+> Lanrith is an open-source immutable router and edge operating system for homelabs. It combines a read-only system image, configuration in Git, owner-controlled signing and integrated networking.
+
+The project is in development. The local console explains router activity; router configuration stays in Git.
+
+The OS and configuration share a read-only image. Leases, logs and service data use separate writable storage. Boot fallback and deliberate rollback are distinct operations.
+
+## Project
+
+- [Lanrith overview](https://lanrith.com/index.md): Markdown version of the landing page, including architecture, networking, local console and project status.
+- [Lanrith website](https://lanrith.com/): The same overview with network and update illustrations.
+- [Lanrith on GitHub](https://github.com/Lanrith): Public repositories and project updates.

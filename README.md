@@ -21,14 +21,19 @@ Open <http://localhost:8000>.
 - `theme.js` controls the theme preference.
 - `motion.js` controls the illustrated interactions and optional motion.
 - `assets/` contains the original Lanrith artwork, fonts, and font licences.
+- `index.md` gives text-reading tools the same product information as the landing page.
+- `llms.txt` points AI tools to the overview and public project links.
+- `robots.txt` allows crawling and identifies `sitemap.xml`.
 
 When changing a CSS or JavaScript file, update its `?v=` suffix in `index.html` to the first 12 characters of the file's SHA-256 hash. This refreshes cached assets for returning visitors.
 
 Preserve the original brand artwork, typography and network illustration language. Compose desktop, tablet and mobile around their reading and interaction needs. Dark mode uses neutral charcoal surfaces with restrained teal accents; light mode uses the original warm paper palette. Keep fonts and images local.
 
-Describe the project’s direction honestly while it is in development. GitHub links invite visitors to follow the project. Keep internal design reviews and planning documents out of the landing-page journey. Add installation or release links only when their destinations are ready.
+Describe existing features in the present tense. Keep the overall development status in the introduction. GitHub links invite visitors to follow the project. Keep internal design reviews and planning documents out of the landing-page journey. Add installation or release links only when their destinations are ready.
 
 The [content and motion notes](docs/design-notes.md) explain the positioning, editorial choices, references, and limits on product claims.
+
+Keep the visible copy, Markdown overview, metadata and structured data consistent in the same commit. Update the sitemap's `lastmod` when the page content changes. The [indexing notes](docs/indexing.md) cover crawler access, domain activation and search-engine verification; the [copy review](docs/copy-review.md) records the wording decisions.
 
 Before publishing, check both themes on desktop, tablet and narrow mobile screens, keyboard navigation, the theme preference after reload, and the page with JavaScript disabled. Exercise each illustrated interaction; check reduced motion on initial load and when changed at runtime. Resize across layout breakpoints and check that controls remain close to their feedback. Check that local links and assets also work under the `/website/` path used by GitHub Pages.
 
