@@ -39,29 +39,6 @@ Before publishing, check both themes on desktop, tablet and narrow mobile screen
 
 Review screenshots as well as browser assertions. The category and main benefits should be clear on a quick scan, with each section adding useful information. Essential content must be readable without waiting for motion or operating a demonstration.
 
-## Hosting
-
-GitHub Pages publishes the root of the `main` branch. `.nojekyll` makes this a plain static deployment.
-
-The project URL is <https://lanrith.github.io/website/>. The intended custom domain is `lanrith.com`.
-
-To connect the custom domain:
-
-1. In this repository’s **Settings → Pages**, set the custom domain to `lanrith.com`.
-2. Set the apex (`@`) DNS A records to:
-
-   ```text
-   185.199.108.153
-   185.199.109.153
-   185.199.110.153
-   185.199.111.153
-   ```
-
-3. Set `www` to a CNAME pointing to `lanrith.github.io`.
-4. Wait for GitHub’s DNS check and certificate provisioning, then enable **Enforce HTTPS**.
-
-GitHub creates a `CNAME` file when the custom domain is saved. Keep that file in subsequent deployments. See [GitHub’s custom-domain guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) for current instructions.
-
 ## Asset licensing
 
 Font licences are included with the fonts. The Lanrith name, logo, and artwork are brand assets; this repository does not grant additional trademark rights.
